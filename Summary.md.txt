@@ -1,0 +1,28 @@
+This repository provides a comprehensive guide to setting up AWS Elastic Kubernetes Service (EKS) with Fargate and the Application Load Balancer (ALB) Ingress Controller. EKS simplifies running Kubernetes on AWS, managing the control plane, while Fargate allows you to run Kubernetes pods without managing the underlying infrastructure.
+
+Key Steps:
+Install Tools:
+
+kubectl, eksctl, and awsCLI.
+Create EKS Cluster:
+
+Use eksctl to create a cluster with Fargate support.
+Configure kubectl:
+
+Update kubeconfig to interact with your EKS cluster.
+Create Fargate Profile:
+
+Add profiles for specific namespaces and applications.
+Deploy Application:
+
+Use provided YAML files to deploy and verify resources.
+Set Up ALB Ingress Controller:
+
+Create an IAM OIDC provider.
+Download and create the necessary IAM policy.
+Create an IAM role for the ALB controller.
+Deploy the ALB controller using Helm.
+Verify Deployment:
+
+Ensure all resources and controllers are running correctly.
+This setup enables efficient management and scaling of Kubernetes applications on AWS, leveraging Fargate for serverless pod execution and ALB for cost-effective load balancing.
